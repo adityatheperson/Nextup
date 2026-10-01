@@ -22,7 +22,7 @@ Extend the existing Cobalt identity: blue #284FB9, pale surface #F7F9FE, ink #18
 
 Use static HTML, CSS, and small vanilla JavaScript under `website/`, with no framework, backend, tracking, or runtime third-party service. Use local assets and a system font stack. Keep assets and links relative so the site works at the GitHub Pages project path `/Nextup/` and in a local preview. Include a concise website README with local preview and GitHub Pages deployment instructions. Preserve the Android design documents; document web-specific tokens separately.
 
-Prepare the website for GitHub Pages, but do not enable hosting, publish a GitHub release, or change repository settings as part of this design approval. Those actions require an explicit publishing request. The source link is https://github.com/adityatheperson/Nextup.
+The user subsequently requested publication on GitHub Pages, authorizing website implementation, source push, and Pages configuration. Publish only the website directory to gh-pages. APK release publication remains outside this request. The source link is https://github.com/adityatheperson/Nextup.
 
 ## Acceptance and verification
 
@@ -35,4 +35,4 @@ Prepare the website for GitHub Pages, but do not enable hosting, publish a GitHu
 
 ## Review status
 
-Direction approved in chat. Written specification prepared for user review. No website implementation or deployment has started.
+Direction approved in chat; user then explicitly requested GitHub Pages publication. Implementation follows this specification with inline execution and a final independent review.

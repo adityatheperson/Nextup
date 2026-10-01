@@ -2,6 +2,8 @@
 
 A quiet Android notification for the next events already synced to your phone. Built for a Pixel 8 Pro; Android 14 or newer is required.
 
+Product website: [NextUp](https://adityatheperson.github.io/Nextup/). The static site and local preview instructions are in [website/](website/README.md).
+
 ## Install
 
 Open `dist/NextUp-0.5.0-debug.apk` on your phone and allow installation from the app you used to open it. Launch NextUp, then grant Calendar and notification access. Google Calendar must already be syncing events to the device.
