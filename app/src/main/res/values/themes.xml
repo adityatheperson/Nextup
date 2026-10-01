@@ -1,0 +1,10 @@
+<resources>
+    <color name="icon_background">#284FB9</color>
+    <style name="Theme.NextUp" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">#F8FAF5</item>
+    </style>
+</resources>
+

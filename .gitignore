@@ -1,0 +1,17 @@
+.gradle/
+.kotlin/
+.tooling/
+**/build/
+local.properties
+*.jks
+.idea/
+captures/
+dist/
+*.keystore
+*.p12
+*.pfx
+*.pem
+.env
+.env.*
+screenshots/
+.impeccable/review/

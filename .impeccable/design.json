@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-29T18:29:10.6530244Z",
+  "title": "Design System: NextUp",
+  "extensions": {
+    "platform": "android",
+    "source": "app/src/main/java/com/adith/nextup/NextUpScreen.kt",
+    "nativeTheme": {
+      "light": "Cobalt lightColorScheme; explicit tokens in DESIGN.md",
+      "dark": "Cobalt darkColorScheme; explicit tokens in DESIGN.md",
+      "selection": "isSystemInDarkTheme()",
+      "palettePolicy": "User-approved fixed Cobalt scheme through semantic Material 3 roles; system light/dark selection."
+    },
+    "elevation": "Default zero-elevation Surface; tonal hierarchy through surfaceContainerHigh.",
+    "nativeRendering": "Jetpack Compose and Android vectors are authoritative. No HTML/CSS approximations.",
+    "accessibility": [
+      "Scrollable body and wrapping titles support system font scaling.",
+      "Refresh is a 48dp target; count and calendar-access controls have 48dp minimum height.",
+      "Refresh has a content description; count exposes event labels and native selected semantics."
+    ],
+    "motion": [
+      {
+        "purpose": "Crossfade changed featured events.",
+        "name": "featured-event",
+        "value": "220ms tween"
+      },
+      {
+        "purpose": "Animate body content-size changes.",
+        "name": "content-size",
+        "value": "220ms tween"
+      },
+      {
+        "purpose": "Animate count-segment container colors.",
+        "name": "count-selection",
+        "value": "180ms tween"
+      }
+    ],
+    "launcher": {
+      "description": "White calendar outline and right arrow on Cobalt primary background; 108-unit viewport, rounded 4-unit calendar and 4.5-unit arrow strokes; also used as adaptive monochrome foreground.",
+      "source": "app/src/main/res/drawable/ic_launcher_foreground.xml"
+    },
+    "walking": {
+      "estimate": "bodyMedium primary",
+      "setup": "Scrollable Material AlertDialog, password field, SecureOn screenshots; local key entry",
+      "metadata": "bodySmall onSurfaceVariant"
+    }
+  },
+  "components": [
+    {
+      "name": "Refresh",
+      "kind": "button",
+      "description": "FilledTonalIconButton with disabled loading indicator; manual refresh completion shows Agenda updated or failure snackbar."
+    },
+    {
+      "name": "Featured event",
+      "kind": "card",
+      "description": "Tonal Surface with headline, absolute time and relative time; 220ms crossfade when the featured event changes."
+    },
+    {
+      "name": "Later event",
+      "kind": "custom",
+      "description": "Aligned clock/content row with inset dividers."
+    },
+    {
+      "name": "Event count",
+      "kind": "custom",
+      "description": "SingleChoiceSegmentedButtonRow with five numeric choices; 180ms selection-color transition."
+    },
+    {
+      "name": "Agenda message",
+      "kind": "card",
+      "description": "Tonal state surface with optional FilledTonalButton recovery."
+    },
+    {
+      "name": "Notification recovery",
+      "kind": "button",
+      "description": "TextButton beneath notification-access guidance."
+    }
+  ],
+  "narrative": {
+    "overview": "NextUp is a quiet, compact Android utility. Native Material 3 typography, the approved Cobalt palette and restrained tonal surfaces make calendar content easy to scan.",
+    "dos": [
+      "Do use native Material color and typography roles in both themes.",
+      "Do retain full titles, accessible labels and scrollable large text.",
+      "Do use actual calendar content to establish hierarchy."
+    ],
+    "donts": [
+      "Don't introduce decorative imagery, gradients or custom shadows.",
+      "Don't add navigation or extra settings to this single-screen utility."
+    ]
+  }
+}

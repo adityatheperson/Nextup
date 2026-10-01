@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView android:id="@+id/event_status" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textSize="11sp" android:textStyle="bold" android:textColor="@color/notification_accent" />
+    <TextView android:id="@+id/featured_title" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.Compat.Notification.Title" android:textSize="18sp" android:textStyle="bold" />
+    <TextView android:id="@+id/featured_time" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.Compat.Notification" android:textSize="12sp" />
+    <TextView android:id="@+id/featured_walk" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="3dp" android:textSize="12sp" android:textColor="@color/notification_accent" />
+    <LinearLayout android:id="@+id/progress_group" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:layout_marginTop="5dp">
+        <ProgressBar android:id="@+id/event_progress" style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent" android:layout_height="6dp" android:max="100"
+            android:progressTint="@color/notification_accent" android:progressBackgroundTint="@color/notification_track" />
+        <TextView android:id="@+id/progress_time" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="3dp" android:textAppearance="@style/TextAppearance.Compat.Notification.Info" android:textSize="10sp" />
+    </LinearLayout>
+    <TextView android:id="@+id/event_divider" android:layout_width="match_parent" android:layout_height="1dp"
+        android:layout_marginTop="6dp" android:background="@color/notification_track" />
+    <LinearLayout android:id="@+id/later_events" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:layout_marginTop="7dp" />
+    <TextView android:id="@+id/walk_credit" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" android:text="Walks: openrouteservice · © OpenStreetMap"
+        android:textAppearance="@style/TextAppearance.Compat.Notification.Info" android:textSize="10sp" />
+</LinearLayout>
