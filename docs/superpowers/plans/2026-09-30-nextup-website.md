@@ -24,10 +24,11 @@ Mobile overflow, keyboard controls, disabled JavaScript, reduced motion, and cor
 - [x] Write scripts/website-demo.test.mjs for all three state transitions and invalid-state fallback; run it before creating the demo module.
 - [x] Build website/index.html, styles.css, demo.mjs, site.mjs, favicon.svg and .nojekyll. Implement accessible state buttons and FAQ disclosures; static content remains useful without JS.
 - [x] Verify behavior with node --test and desktop/mobile browser checks; inspect screenshots together, fix material defects in one batch, and confirm. Obtain a fresh review.
-- [ ] Document web-specific tokens in website/DESIGN.md and publish instructions in website/README.md. Preserve Android's DESIGN.md.
-- [ ] Commit/push main, publish the website subtree to gh-pages, enable repository Pages using that branch, and verify the public URL and assets.
+- [x] Document web-specific tokens in website/DESIGN.md and publish instructions in website/README.md. Preserve Android's DESIGN.md.
+- [x] Commit/push main, publish the website subtree to gh-pages, enable repository Pages using that branch, and verify the public URL and assets.
 
 ## Execution ledger
 
 - Existing Android branch is clean at start. No checkout isolation is needed for this additive web directory.
 - Ruling: explicit publishing instruction supersedes the specification's earlier no-deployment boundary. No APK release publication was requested.
+

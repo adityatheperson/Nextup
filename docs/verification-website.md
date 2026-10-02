@@ -9,3 +9,10 @@ Date: 2026-09-30.
 - Independent visual and source review disposition: Ship; no required fixes. Web tokens documented separately from the Android design system.
 - GitHub releases API returned no releases. The website therefore offers truthful source/build instructions and no unverified APK download link.
 - Publishing is explicitly authorized. Only the website subtree will be served from gh-pages; Android sources, caches, APKs and local screenshots remain outside the Pages branch.
+
+## Deployment verified 2026-10-01
+
+- Published https://adityatheperson.github.io/Nextup/ from gh-pages commit c8ebbbe914045ca683b948eb6b6a88a1c6f12e03. GitHub Pages reports built with HTTPS enforced.
+- Public HTML, CSS, both JavaScript modules and favicon returned HTTP 200 and matched the locally verified source.
+- Live mobile Edge check passed: Now progress is 50%, exactly one walking estimate appears, Finished promotes Physics lab, no horizontal overflow or page errors.
+
